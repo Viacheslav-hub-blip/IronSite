@@ -22,6 +22,6 @@ urlpatterns = [
     path('', include('mainPage.urls')),
     path('abous-us', include('mainPage.urls')),
     path('politics', include('mainPage.urls')),
-    #path
+
 
 ]
