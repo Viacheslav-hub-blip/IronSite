@@ -1,8 +1,264 @@
-{%extends 'mainPage/base.html'%}
-{% block title %}
-Страница про нас
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About-us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
 
-{% block content %}
-    <h1>Страница про нас</h1>
-{% endblock %}
+    <link rel="stylesheet" href="../../static/product.css">
+    <link rel="stylesheet" href="../../static/carousel.css">
+
+    <style>
+        .wrapper {
+            width: 300px;
+            height: 300px;
+            border: 5px solid #515151;
+        }
+
+        .exmpl {
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .exmpl img {
+            height: 100%;
+            width: auto;
+        }
+    </style>
+
+</head>
+<body>
+<header class="site-header sticky-top py-1">
+    <nav class="container d-flex flex-column flex-md-row justify-content-between">
+
+        <a class="py-2 d-none d-md-inline-block" href="/">Главная</a>
+        <a class="py-2 d-none d-md-inline-block" href="/about-us">О нас</a>
+        <a class="py-2 d-none d-md-inline-block" href="/creators">Создатели</a>
+        <a class="py-2 d-none d-md-inline-block" href="/Investors">Инвесторы</a>
+        <a class="py-2 d-none d-md-inline-block" href="#">Контакты</a>
+        <a class="py-2 d-none d-md-inline-block" href="/politics">Политика</a>
+
+    </nav>
+</header>
+
+<main>
+
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+        <h1 class="display-4 fw-normal">About-us</h1>
+    </div>
+
+    <div class="overflow-hidden p-3 p-md-3 m-md-3">
+        <p class="fw-normal">Я Вячеслав Рыльков, обынчый парень 18-ти лет, который хочет притворить свои мечты в жизнь и
+            показать это людям.Я вырос в небольшом городе с населением в 40 тысяч человек и в данный момент проживаю в
+            нем. Уже несколько лет я вдохновлен идеей создания ботинок, сделанных из карбона, легкосплавных материалов
+            или из пластика.Особенностью этих ботинок является их материал и возможность раскрытия задней части.
+            Возможно вы видели это в фильмах Marvel. В перспективе в каблук ботинка будет установлен микроконтроллер по
+            типу Arduino для дистанционного раскрытия задней части с помощью приводов которые будут установлены в
+            специльных зонах. В первых версиях все это будет работать от аккумулятора, который нужно будет заряжать
+            отдельно, но, при наличии средст на разработка, я хочу сделать зарядную станцию, на который будут
+            располагаться и заряжаться ботинки. Я считаю, что данные ботинки будут иметь популярность как в жизни
+            обычных людей, например зимой,ведь я планирую в них обогрев(не забываем про аккумулятор),так и жизни рабочих
+            ведь ботинки будут иметь высокую прочность и смогут защитить ноги. Прежде чем идти дальше посмотрите вокруг
+            и обратите внимание на вещи, которые окружают вас. Скорее всего, вы увидите телефон - гаджет, который
+            некогда был громосткой техникой и в какой то мере мечтой. Кроме этого вы,возможно, увидите машины, которые
+            проделали такой же путь. А теперь спросите себя: может ли превратиться в гаджет не тольео то, что окружает
+            нас, но и находится непосредственно на нас? Если
+            вы думаете - да или вы просто любите фильмы или же технологии, то нам по пути. Началось все весной 2023
+            года, когда я с головой погрзился в 3d моделирование для реализации своей мечты. За пару недель я освоил азы
+            Blender, сделал несколько моделей и принялся за работу. Спустя пару месяцев я закончил первые версии модели.
+            В июне 2023 я имел готовую модель, которую собирался напечать. Следующим шагом была печать, но до этого я
+            решил написать сайт, которым вы сейчас пользуетесь. Если вам что то не нравится или у вас есть
+            предложения,обязательно напишите мне</p>
+    </div>
+
+
+    <div class="container-fluid">
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <h4 class="text-center">Blender - Together, tomorrow, today in this day</h4>
+                <p>Моя, а может быть, и наша сосаит из 15 отдельных элементов, а именно: Передняя часть, которая
+                    включает в себя 4 компонента, основная часть, состоящаа из 4 элементов и задняя часть.Первое что я
+                    сделал выделил первочереднуюзадачу - создание грубой формы. Я решил это сделать для того чтобы
+                    получить общее представление и понять куда мне двигаться дальше. После
+                    создания модели и проверки ее гибкости.Основная часть нашего ботинка может менять свое положение
+                    относительно носка на 5.7 градуса,а задняя часть на более чем на 40 что обеспечивает широкую
+                    раскрываемость. Завершающей частью стало привдние всех элементов к реальным размерам т.к в Blender
+                    используются собственные условные единицы. Первая версия ботинок будет иметь мой размер, поэтому я
+                    снял мерки со своей ноги, взял запас на внутреннюю обивку и приступил к модеоированию. Внутреннию
+                    обивку я думаю делать шириною 1 см со всех сторон,это должно обеспечить мягкость,которой не обладают
+                    ботинки из за материалов. После приведния модели к человеческим размерам, мне нужно нужно было
+                    добавить толщину на каждый элемент т.к в Bledner все модели не имеют по умолчанию толщины, чего не
+                    может быть в реальном мире.</p>
+            </div>
+
+            <div class="col-md-6 text-center">
+
+                <div id="Carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="row">
+
+
+                        <div class="col-2">
+                            <button class="carousel-control-prev" type="button" data-bs-target="#Carousel"
+                                    data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon btn btn-dark" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                        </div>
+
+                        <div class="col-8 text-center">
+                            <div class="carousel-inner">
+
+                                <div class="carousel-item active container h-80" style="height: 400px">
+                                    <img src="../../static/3d.png"/>
+                                </div>
+
+                                <div class="carousel-item active container h-80" style="height: 400px">
+                                    <img src="../../static/3d.png"/>
+                                </div>
+
+                                <div class="carousel-item active container h-80" style="height: 400px">
+                                    <img src="../../static/3d.png"/>
+                                </div>
+
+                            </div>
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#Carousel" data-bs-slide-to="0" class="active"
+                                        aria-label="Slide 1" aria-current="true"></button>
+                                <button type="button" data-bs-target="#Carousel" data-bs-slide-to="1" class=""
+                                        aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#Carousel" data-bs-slide-to="2" class=""
+                                        aria-label="Slide 3"></button>
+                            </div>
+                        </div>
+
+                        <div class="col-2">
+                            <button class="carousel-control-next " type="button" data-bs-target="#Carousel"
+                                    data-bs-slide="next">
+                                <span class="carousel-control-next-icon btn btn-dark" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div><br></div>
+
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/vlDzYIIOYmM" title="YouTube video"
+                            allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <h4 class="text-center">
+                    Нет, меня это не сильно напрягает, потому что я давно снимаю видео для себя, как хобби
+                </h4>
+
+                <p>
+                    Посоветовавшись со Slarvis, мы пришли к выводу, что Видео с
+                    презентацией продукта можно легко распространять по различным каналам, включая социальные сети,
+                    веб-сайты и электронную почту. Такой подход позволяет достичь большей аудитории. Для этого я
+                    экспортировал модель из Blender в Unity т.к
+                    там можно удобнее делать анимацию. Т.к я не разобрался с интерфейсов анимаций, я решил сделать ее с
+                    помощью кода на C#. В видео показаны основные элементы, внутреннее устройство, внешний вид и
+                    функционал первого прототипа. Так же важным элементом стало фоновое сопровождение. В целом, видео с
+                    презентацией продукта является мощным инструментом в проекте, помогающим привлечь внимание, вызвать
+                    интерес и добиться результативности в коммуникации с потенциальными клиентами или инвесторами
+                </p>
+            </div>
+
+
+        </div>
+
+        <div><br></div>
+        <div><br></div>
+
+        <div class="padding-top">
+            <div class="row">
+
+                <div class="col-md-6 text-center">
+                    <h4>3d</h4>
+                    <p>jnscsclnln</p>
+                </div>
+
+                <div class="col-md-6 text-center">
+
+                    <img src="../../static/social network.jpg" height="500" width="500"/>
+                </div>
+
+            </div>
+        </div>
+
+        <div><br></div>
+
+        <div class="row">
+
+            <div class="d-flex col-md-6 text-center justify-content-center align-items-center">
+
+                <img src="../../static/maxresdefault.jpg" height="500" width="700"/></div>
+
+            <div class="col-md-6">
+                <h4 class="text-center">
+                    Search for investors
+                </h4>
+
+                <p>
+                    Инвесторов я собираюсь искать с помощью краундфандинга. Моя идея может заинтересовать людей, которые
+                    как и я смотрели фильмы Marvel или просто увлекаются необычными вещами или пожертвованиями. Искать
+                    спонсоров я буду на всех площадках, которые мне доступны - Kickstarter... Для того чтобы
+                    заинтеревосвать людей был создан промо ролик, Данный сайт и готовый прототип. Так же я постарался
+                    составить примерный бизнес план и финансовую модель, включив необходимые элементы, например,
+                    технику. <br><br>
+                    1. 3D принтеры. Для быстрой печати необходимо иметь минимум 3 принтера. В таком случае на каждый
+                    принтер будет приходиться по 5 деталей. Стоимость одного принтера с подходщей площадью и высотой
+                    наичнается от 900$. <br>
+                    2 Аренда помещения. Стоимость аренды небольшого помещения свободного назначения составляет примерно
+                    500$.
+                    3.Пластик. Для печати одной модели стоимость пласика составляет примерно 20$ <br>
+                    4.Утеплпение. Обивка ботинка обходится в 30$ <br>
+                    5.Техническая часть. Стоимость компонентов, включая контроллеры, приводы, провода обходится в 50$
+                    <br><br>
+
+                    Вместо покупки принтеров можно печатать модель на заказ, но в этом случае на печатать модели будет
+                    уходить больше времени, могут быть проблемы с производителями, которые не нужны на старте.<br>
+                    Таким образом для покупки всего необходимого и существования в первые 8 месяцев,пока продажи не
+                    станут регулярными, необходимо иметь 9000-10000$. <br>
+
+                </p>
+            </div>
+
+        </div>
+
+        <div><br></div>
+        <div><br></div>
+
+        <div>
+            <p class="text-primary">При необходимом финансировании моя идея может найти свое место в новой нише вещей. В
+                будущем я собираюсь
+                реализовать все идем описанные в первом абзаце и уже на данный момент у меня есть концепции следующих
+                моделей ботинок, которые будут еще технологичней удобнее и круче. Помимо ботинок в будущем я хочу так же
+                создавать и другие и кастомизированные вещи. Если вам интресесна, то вы можете стать частью команды или
+                поддержать проект.</p>
+        </div>
+
+
+    </div>
+
+</main>
+
+</body>
+</html>

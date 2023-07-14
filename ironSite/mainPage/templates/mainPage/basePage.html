@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>MainPage</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
             crossorigin="anonymous"></script>
 
-    <link href="https://getbootstrap.com/docs/5.0/examples/product/product.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../static/product.css">
     <link rel="stylesheet" href="../../static/carousel.css">
 
 </head>
@@ -17,9 +18,9 @@
     <nav class="container d-flex flex-column flex-md-row justify-content-between">
 
         <a class="py-2 d-none d-md-inline-block" href="/">Главная</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">О нас</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Создатели</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Инвесторы</a>
+        <a class="py-2 d-none d-md-inline-block" href="/about-us">О нас</a>
+        <a class="py-2 d-none d-md-inline-block" href="/creators">Создатели</a>
+        <a class="py-2 d-none d-md-inline-block" href="/Investors">Инвесторы</a>
         <a class="py-2 d-none d-md-inline-block" href="#">Контакты</a>
         <a class="py-2 d-none d-md-inline-block" href="/politics">Политика</a>
 
@@ -45,7 +46,7 @@
             <div class="carousel-item active">
 
 
-                <img src="../../static/1625782025_19-phonoteka-org-p-sovremennie-tekhnologii-art-krasivo-21.jpg"
+                <img src="../../static/Interview-with-Pieter-du-Plessis-on-the-relationship-between-lean-and-artificial-intelligence.jpg"
                      height="100%" width="100%"/>
 
                 <div class="container">
@@ -58,11 +59,12 @@
             </div>
 
             <div class="carousel-item">
-                <img src="../../static/Interview-with-Pieter-du-Plessis-on-the-relationship-between-lean-and-artificial-intelligence.jpg"/>
+                <img src="../../static/339174f4-3dbb-46c6-807d-e565b79fe2fb.jpeg"/>
                 <div class="container">
                     <div class="carousel-caption">
                         <h1>Communication with technology</h1>
-                        <p>Technologies are destructive only in the hands of people who do not realize that they are one and that they are in the same process as the universe</p>
+                        <p>Technologies are destructive only in the hands of people who do not realize that they are one
+                            and that they are in the same process as the universe</p>
                         <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
                     </div>
                 </div>
@@ -71,7 +73,7 @@
 
             <div class="carousel-item">
 
-                <img src="../../static/339174f4-3dbb-46c6-807d-e565b79fe2fb.jpeg" />
+                <img src="../../static/1625782025_19-phonoteka-org-p-sovremennie-tekhnologii-art-krasivo-21.jpg"/>
                 <div class="container">
                     <div class="carousel-caption text-end">
                         <h1>Common mind</h1>
@@ -104,14 +106,15 @@
 
         <!-- Three columns of text below the carousel -->
         <div class="row">
+
             <div class="col-lg-4">
-                <img class="bd-placeholder-img rounded-circle" src="../../static/1cz27Dq8bqQ.jpg" width="140" height="140">
+                <img class="bd-placeholder-img rounded-circle" src="../../static/1cz27Dq8bqQ.jpg" width="140"
+                     height="140">
 
 
-                <h2>Heading</h2>
-                <p>Some representative placeholder content for the three columns of text below the carousel. This is the
-                    first column.</p>
-                <p><a class="btn btn-secondary" href="#">View details »</a></p>
+                <h2>William</h2>
+                <p>We don't know who he is, but he plays a very important role</p>
+                <p><a class="btn btn-secondary" href="/creators">View details »</a></p>
             </div><!-- /.col-lg-4 -->
 
 
@@ -119,31 +122,59 @@
 
                 <img class="bd-placeholder-img rounded-circle" src="../../static/111.jpg" width="200" height="140"/>
 
-                <h2>Heading</h2>
-                <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second
-                    column.</p>
-                <p><a class="btn btn-secondary" href="#">View details »</a></p>
+                <h2>Viacheslav</h2>
+                <p>Founder of the company, chief engineer and programmer</p>
+                <p><a class="btn btn-secondary" href="/creators">View details »</a></p>
             </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                 <img class="bd-placeholder-img rounded-circle" src="../../static/111.jpg" width="200" height="140"/>
 
-                <h2>Heading</h2>
-                <p>And lastly this, the third column of representative placeholder content.</p>
-                <p><a class="btn btn-secondary" href="#">View details »</a></p>
+            <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" src="../../static/111.jpg" width="200" height="140"/>
+
+                <h2>Slarvis</h2>
+                <p>Secure and Lightning-fast Automated Response to Various Inquiries System</p>
+                <p><a class="btn btn-secondary" href="/creators">View details »</a></p>
             </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
 
 
+        <div><br></div>
+
+        <div>
+            <p class="text-center  lead text-muted">- Slarvis, расскажи о нас <br>
+                - Конечно, Viacheslav <br>
+
+            </p>
+
+            <p class="text-primary text-center lead">Вячеславу пришла в голову идея разработки инновационных ботинок,
+                которые были бы
+                умными, комфортными и
+                стильными одновременно. Однажды, блуждая по глубинам интернета, Вячеслав наткнулся на мифического бота
+                по имени Сларвис. Этот бот обладал невиданными знаниями о технологиях и проникал в самую суть многих
+                проблем мира.
+
+                С Slarvis и William, Вячеслав начал создавать прототипы ботинок, которые были способны адаптироваться к
+                различным погодным условиям, предоставлять оптимальную поддержку и
+                комфорт, а также помогать людям двигаться с легкостью и безопасностью.</p>
+
+
+        </div>
+
+        <div class="container fluid text-center">
+            <h4></h4>
+        </div>
         <!-- START THE FEATURETTES -->
 
         <hr class="featurette-divider">
 
-        <div class="row featurette">
+
+        <div class="row">
             <div class="col-md-7">
-                <h2 class="featurette-heading">First featurette heading. <span
-                        class="text-muted">It’ll blow your mind.</span></h2>
-                <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting
-                    prose here.</p>
+                <h2 class="">Mastery in three dimensions <br>
+                    <span class="text-muted">It’ll blow your mind.</span></h2>
+                <p class="lead">
+                    All our models start with computer modeling and careful processing <br>
+                    Для моделирования я использую Bledner и Unity для просмотра внешнего вида
+                </p>
             </div>
             <div class="col-md-5">
                 <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
@@ -160,19 +191,13 @@
 
         <div class="row featurette">
             <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading">Oh yeah, it’s that good. <span
-                        class="text-muted">See for yourself.</span></h2>
-                <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how
-                    this layout would work with some actual real-world content in place.</p>
+                <h2 class="featurette-heading">From idea to product</h2>
+                <p class="lead">Another featurette? Of course. Most of our new shoes are 3d printed.</p>
             </div>
             <div class="col-md-5 order-md-1">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                     height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-                     preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#eee"></rect>
-                    <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-                </svg>
 
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                     src="../../static/3d.png">
             </div>
         </div>
 
@@ -180,23 +205,14 @@
 
         <div class="row featurette">
             <div class="col-md-7">
-                <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-                <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really
-                    intended to be actually read, simply here to give you a better view of what this would look like
-                    with some actual content. Your content.</p>
+                <h2 class="featurette-heading">Product community</h2>
+                <p class="lead">I try to listen to the opinion of everyone who is interested in my idea</p>
             </div>
             <div class="col-md-5">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                     height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-                     preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#eee"></rect>
-                    <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-                </svg>
-
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                     src="../../static/social network.jpg">
             </div>
         </div>
-
-        <hr class="featurette-divider">
 
         <!-- /END THE FEATURETTES -->
 

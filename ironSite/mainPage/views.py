@@ -19,6 +19,14 @@ def politics(request):
     return render(request, 'mainPage/politics.html')
 
 
+def creators(request):
+    return render(request, 'mainPage/creators.html')
+
+
+def investors(request):
+    return render(request, 'mainPage/Investors.html')
+
+
 def create(request):
     error = ''
     if request.method == 'POST':
